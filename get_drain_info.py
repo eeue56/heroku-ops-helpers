@@ -62,8 +62,9 @@ def main():
 
     if args.pipeline is None and args.app is None:
         print('Nothing to do..')
+        print('You need to tell me which pipeline or app to work with!')
     elif args.pipeline:
-        print('Getting pipeline apps...')
+        print('Getting drain info for apps in the given pipeline...')
         apps = get_pipeline_apps(args.pipeline)
 
         to_print_info = []
